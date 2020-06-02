@@ -1,18 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import ProductItem from "./ProductItem";
+import ProductList from "./ProductList";
 
-const product = {
-  id: 1,
-  name: "mango",
-};
-
-export default function App() {
+export default function App({ products }) {
   return (
     <div>
       <Header />
       <div>
-        <ProductItem product={product}></ProductItem>
+        <ProductList products={products}></ProductList>
       </div>
     </div>
   );
